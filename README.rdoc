@@ -1,10 +1,10 @@
-testing specs for chefs:
-chefname: string
-email: string
+Authentication updates:
 
-- chefname must be present
-- chefname must be between 3 charcters and less than 40
-- email must be present
-- email must be unique (since we'll use this for logins later)
-- email must be valid
+1- Show recipe page -> Ability to Edit/update only own recipe
+2- Navigation partial -> Toggle Menu, restrict new
+3- Restrict thumbs up and thumbs down action to logged_in users only
+4- Recipe -> update to current_user
+5- Like -> update to current_user
+6- Before_action :require_user, exceptL [:show, :index]
+7- Before_action :require_same_user for shefs, only: [:edit, :update]
  
